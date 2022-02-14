@@ -5,10 +5,22 @@ function Dashboard() {
   const [lastName, setLastName] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
 
-  const handleInputChange = (e) => {
+  const handleFirstName = (e) => {
     const value = e.target.value;
     setFirstName(value);
-   console.log("Name:", firstName);
+    console.log("Name:", firstName);
+  };
+
+  const handleLastName = (e) => {
+    const value = e.target.value;
+    setLastName(value);
+    console.log("Name:", firstName);
+  };
+
+  const handlePhoneNumber = (e) => {
+    const value = e.target.value;
+    setPhoneNumber(value);
+    console.log("Name:", firstName);
   };
 
   const onSubmit = (e) => {
@@ -22,34 +34,31 @@ function Dashboard() {
           className="input-dashboard"
           type="text"
           value={firstName}
-          onChange={handleInputChange}
+          onChange={handleFirstName}
           placeholder="Enter first name here"
         ></input>
 
-      
         <input
           className="input-dashboard"
           type="text"
           value={lastName}
-          onChange={handleInputChange}
+          onChange={handleLastName}
           placeholder="Enter last name here"
         ></input>
 
-        
         <input
           className="input-dashboard"
           type="text"
           value={phoneNumber}
-          onChange={handleInputChange}
+          onChange={handlePhoneNumber}
           placeholder="Enter phone number here"
         ></input>
 
         <button
           className="btn btn-dashboard btn-submit"
-          value={phoneNumber}
           onClick={(e) => {
-            if (firstName === "") {
-              return alert("Please enter your phone number.");
+            if (firstName || lastName || phoneNumber === "") {
+              return alert("You are missing required information.");
             }
             onSubmit(e);
           }}
@@ -57,7 +66,6 @@ function Dashboard() {
         >
           SUBMIT
         </button>
-
       </div>
 
       <div className="container">
@@ -65,7 +73,7 @@ function Dashboard() {
           <h1>{firstName}</h1>
         </div>
         <div className="box box-two">
-        <h1>{lastName}</h1>
+          <h1>{lastName}</h1>
         </div>
         <div className="box box-three">
           <h1>{phoneNumber}</h1>
