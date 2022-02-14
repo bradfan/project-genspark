@@ -13,13 +13,42 @@ code {
     monospace;
 }
 
-.header {
+.header, .footer, .dashboard {
   text-align: center;
   background-image: linear-gradient(to right, rgb(60, 200, 177), rgb(55, 111, 119));
   border: 1px solid black; 
   border-radius: 1rem;
   padding:1rem;
   width: 100%;
+  margin:2px;
   box-sizing:border-box;
   
 }
+
+.dashboard-main{
+
+}
+
+input {
+  border-radius: 1rem;
+  background-color:gray;
+  height:2rem;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+  border:none;
+  
+}
+input::placeholder{
+  color: rgb(221, 206, 206);
+  text-align: center;
+}
+input:hover{
+  background-color:azure;
+}
+
+.btn {
+  border-radius: 1rem;
+  height: 2rem;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+  font-weight: 500;
+}
+
