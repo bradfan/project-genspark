@@ -11,16 +11,16 @@ class RouterComponent extends Component {
       <div>
         <Router>
           <Header />
-          <Switch>
-              
-            <Route exact path="/">
+          {/* <Switch>
+
+            <Route exact path="//">
               <Login />
             </Route>
             <Route exact path="/">
-              <Welcome name="Everett" />
+              <Welcome name="props.name/reminder" />
             </Route>
         
-          </Switch>
+          </Switch> */}
           <Footer />
         </Router>
       </div>
