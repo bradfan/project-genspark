@@ -9,18 +9,17 @@ class Header extends Component {
           <h1 className="title">Working Title</h1>
        
         <nav className="navbar">
-          <ul className="navbar-nav">
-            <li>
-              <Link className="nav-link" to="/">
+          <p>
+              <Link className="nav-link btn" to="/">
                 Home
               </Link>
-            </li>
-            <li>
-              <Link className="nav-link" to="/EmployeeRegistry">
+            </p>
+            <p>
+              <Link className="nav-link btn" to="/EmployeeRegistry">
                  Registry
               </Link>
-            </li>
-          </ul>
+            </p>
+          
         </nav>
         </header>
     );

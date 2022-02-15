@@ -13,7 +13,7 @@ code {
     monospace;
 }
 
-.header, .footer, .dashboard {
+.header, .footer {
   text-align: center;
   background-image: linear-gradient(to right, rgb(60, 200, 177), rgb(55, 111, 119));
   border: 1px solid black; 
@@ -25,11 +25,40 @@ code {
   
 }
 
-.dashboard-input{
-/* margin-top: 2px;
-margin-bottom: 2px; */
-padding-bottom: 2rem;
+.navbar {
+  display:flex;
+  justify-content:start flex;
+   
 }
+
+.nav-link{
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  border: 1px solid black;
+  border-radius: 1rem;
+  padding:3px;
+  display:inline-block;
+  margin:2px;
+ 
+}
+
+.btn {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+}
+
+.btn:hover {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.9);
+  transform: scale(1.01) translateY(-0.4rem);
+  transition: all 0.3s ease;
+}
+
+.btn:active {
+  outline: none;
+  transform: translateY(-1.5px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
 
 input {
   border-radius: 1rem;
@@ -50,24 +79,9 @@ input:hover{
   transition: all 0.3s ease;
 }
 
-.btn {
-  border-radius: 1rem;
-  height: 2rem;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
-  font-weight: 500;
-}
 
-.btn:hover {
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.9);
-  transform: scale(1.01) translateY(-0.4rem);
-  transition: all 0.3s ease;
-}
 
-.btn:active {
-  outline: none;
-  transform: translateY(-1.5px);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-}
+
 
 .container{
   display: grid;
