@@ -1,17 +1,15 @@
+import React, { Component } from "react";
+import "./index.css";
+import Router from "./components/general/Router"
 
-import './index.css';
-import Header from "./pages/Header"
-import Dashboard from "./pages/Dashboard"
-import Footer from "./pages/Footer"
-
-function App() {
-  return (
-    <div className="App">
-     <Header/>
-     <Dashboard/>
-     <Footer/>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <Router />
+      </div>
+    );
+  }
 }
 
 export default App;
