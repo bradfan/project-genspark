@@ -17,7 +17,7 @@ class Header extends Component {
             </li>
             <li>
               <Link className="nav-link" to="/EmployeeRegistry">
-                Employee Registry
+                 Registry
               </Link>
             </li>
           </ul>
